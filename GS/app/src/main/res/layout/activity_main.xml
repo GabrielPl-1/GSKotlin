@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/azul"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:text="Check da Praia"
+        android:gravity="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold"
+        android:textSize="40dp"/>
+    />
+
+    <!-- EditTexts -->
+    <EditText
+        android:id="@+id/Praia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Coloque a praia"
+        android:textColor="@android:color/holo_orange_light"
+        android:textColorHint="@android:color/holo_orange_light"/>
+
+    <EditText
+        android:id="@+id/Cidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Coloque a cidade"
+        android:textColor="@android:color/holo_orange_light"
+        android:textColorHint="@android:color/holo_orange_light"/>
+
+    <EditText
+        android:id="@+id/Estado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Coloque o estado"
+        android:textColor="@android:color/holo_orange_light"
+        android:textColorHint="@android:color/holo_orange_light"/>
+
+
+    <!-- Botão -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Incluir" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:textColor="@android:color/holo_orange_light"/>
+
+</LinearLayout>
